@@ -1,0 +1,37 @@
+{
+  "name": "frontlib",
+  "author": "Andrew Dmitriev <andrew.dmitriev.work@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": ["frontend", "library", "freatures", "components"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andmitr/frontlib"
+  },
+  "homepage": "https://andmitr.github.io/frontlib#readme",
+  "bugs": {
+    "url": "https://github.com/andmitr/frontlib/issues",
+    "email": "andrew.dmitriev.work@gmail.com"
+  },
+  "funding": [
+    {"type": "individual", "url": "https://yoomoney.ru/to/410016288289737"},
+    {"type": "boosty", "url": "https://boosty.to/theEvilGrinch/donate"}
+  ],
+  "main": "./index.js",
+  "exports": "./index.js",
+  "type": "module",
+  "scripts": {
+    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix",
+    "eslint:fix": "npx eslint \"**/*.js\" --fix",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "devDependencies": {
+    "@stylistic/stylelint-plugin": "^3.1.2",
+    "eslint": "^9.22.0",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.0.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.16.0"
+  }
+}

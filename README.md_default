@@ -1,0 +1,72 @@
+# Headline (appname)
+[![Support me on Boosty](https://img.shields.io/badge/Support%20me%20on%20-%20Boosty%20-%20orange?style=flat-square&logo=boosty&color=orange)](https://boosty.to/theEvilGrinch/donate)
+[![Donate via Card](https://img.shields.io/badge/Donate%20-%20via%20Card%20-%20purple?style=flat-square&logo=mastercard&color=purple)](https://yoomoney.ru/to/410016288289737)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square;logo=opensource)](https://opensource.org/licenses/MIT)
+
+{Description / Project Summary}
+
+{Project logo if needed} <img src="" alt="" width="400px" style="max-width: 100%;">
+
+## Table of Contents
+- [Features](#features)
+- [Live Demo](#live-demo)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Build and Installation](#build-and-installation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+  - Feature 1 - short description
+  - Feature 2 - short description
+  ...
+
+## Live Demo (if needed)
+
+[Live Demo](https://username.github.io/appname/)
+
+**Screenshots:**
+
+| Light Theme                                | Dark Theme                               |
+|--------------------------------------------|------------------------------------------|
+| ![Light Theme](dist/preview-light.png)     | ![Dark Theme](dist/preview-dark.png)     |
+
+
+## Project Structure
+```
+./
+├── folder1/           # Folder description
+│   ├── file1.ext      # File description
+│   ├── ...
+...
+├── file.ext           # File description
+...
+├── LICENSE
+└── README.md
+```
+{
+  Long files description if needed
+  - file1 - long description, notes
+  - ...
+}
+
+## Prerequisites (dependency, if needed)
+
+### Dependencies
+- Node.js >=v16.0.0 (for example)
+- npm >=v11.1.0
+- Go >= v1.16
+...
+
+### Development Dependencies (if needed):
+  - ...
+...
+
+## Build and Installation (if needed)
+...
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+MIT Licensed - See [LICENSE](LICENSE) for details.

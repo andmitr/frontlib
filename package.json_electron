@@ -1,0 +1,84 @@
+{
+  "name": "appname",
+  "author": "Firstname Lastname <mail@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "description",
+  "keywords": ["appname", "keyword1", "keyword2"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/appname"
+  },
+  "homepage": "https://username.github.io/appname#readme",
+  "bugs": {
+    "url": "https://github.com/username/appname/issues",
+    "email": "mail@gmail.com"
+  },
+  "funding": [
+    {"type": "individual", "url": "https://url"},
+    {"type": "boosty", "url": "https://boosty.to/username/donate"}
+  ],
+  "main": "./main.electron.js",
+  "exports": "./main.electron.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "build:electron": "npm run build && electron-builder",
+    "build:electron-cross-platform": "npm run build && electron-builder --win --mac --linux",
+    "start:electron": "npm run build && concurrently \"npm run watch\" \"NODE_ENV=development electronmon --trace-warnings .\"",
+    "watch": "node watch.js",
+    "clean:build": "node -e \"import { deleteSync } from 'del'; deleteSync(['build/*', '!build/**/', '!build/*.{png,icns,ico,yml,desktop}']);\"",
+    "clean:dist": "node -e \"import fs from 'fs-extra'; fs.emptyDir('dist');\"",
+    "clean:local_cache": "rm -rf ~/.config/calculator-web-pwa-electron",
+    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix",
+    "eslint:fix": "npx eslint \"**/*.js\" --fix"
+  },
+  "build": {
+    "appId": "com.github.username.appname",
+    "productName": "appname",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "main.electron.js"
+    ],
+    "icon": "build/icon",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "appname"
+    },
+    "linux": {
+      "category": "Utility",
+      "synopsis": "Short description",
+      "description": "description",
+      "maintainer": "Firstname Lastname <mail@gmail.com>",
+      "target": ["AppImage", "deb"],
+      "icon": "build/icon"
+    },
+    "mac": {
+      "target": "zip",
+      "icon": "build/icon.icns"
+    }
+  },
+  "devDependencies": {
+    "@stylistic/stylelint-plugin": "^3.1.2",
+    "concurrently": "^9.1.2",
+    "del": "^8.0.0",
+    "electron": "^31.0.0",
+    "electron-builder": "^26.0.12",
+    "electronmon": "^2.0.3",
+    "eslint": "^9.22.0",
+    "fs-extra": "^11.3.0",
+    "globals": "^16.0.0",
+    "stylelint": "^16.16.0"
+  }
+}

@@ -1,0 +1,12 @@
+/* DEVELOPER */
+	Andrew Dmitriev
+	Contact: andrew.dmitriev.work@gmail.com
+	Telegram: @andrewdmitriev_220289
+	VK: https://vk.com/andrewdmitriev_220289
+	From: Velikiy Novgorod, Russia
+
+/* SITE */
+	Last update: 2026/01/01
+	Language: English
+	Doctype: HTML5
+	IDE: Goland, Zed editor, Figma

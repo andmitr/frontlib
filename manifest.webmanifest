@@ -1,0 +1,46 @@
+{
+  "name": "{SITE_NAME}",
+  "short_name": "{SITE_SHORT_NAME}",
+  "description": "{SITE_DESCRIPTION}",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2d2d2d",
+  "theme_color": "#009cfb",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    { "src": "icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "icon-mask.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" },
+    { "src": "icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile-dark.png",
+      "sizes": "750x1000",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile (portrait), dark color theme"
+    },
+    {
+      "src": "screenshot-mobile-light.png",
+      "sizes": "750x1000",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile (portrait), light color theme"
+    },
+    {
+      "src": "screenshot-tablet.png",
+      "sizes": "1200x1600",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tablet (landscape), dark color theme"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "PC (landscape), dark color theme"
+    }
+  ]
+}
